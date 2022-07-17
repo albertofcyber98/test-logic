@@ -1,38 +1,41 @@
 .App {
-  text-align: center;
+  margin-left: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-buah .data-buah{
+  text-transform: lowercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.table-buah thead th{
+  background-color: cadetblue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.table-buah tbody tr:hover{
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex{
+  display: flex;
+  margin-bottom: 5px;
+}
+.flex .item{
+  background-color: cadetblue;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 5px;
+  text-transform: lowercase;
+}
+.flex .item:hover{
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+  transition: all 0.5s;
+}
+.style-word{
+  text-transform: lowercase;
+}
+.stock{
+  font-weight: 700;
 }
